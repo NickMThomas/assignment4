@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Titan Online Banking - New Customer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="mainHeader">
+            </div>
+            <div class="center">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="Account_activity.html">Account Activity</a></li>
+                    <li><a href="Transaction.html">Transactions</a></li>
+                </ul>
+            </div>
+            <div>                
+                <h3><i>${message}</i></h3>
+                <form method="post">
+                    <input type="hidden" name="action" value="join">
+                    <br>
+                    <label>First Name:</label>
+                    <br>
+                    <input type="text" name="FirstName" >
+                    <br>
+                    <label>Last Name:</label>
+                    <br>
+                    <input type="text" name="LastName" >
+                    <br>
+                    <label>Phone:</label>
+                    <br>
+                    <input type="text" name="Phone" >
+                    <br>
+                    <label>Street Address:</label>
+                    <br>
+                    <input type="text" name="Address" >
+                    <br>
+                    <label>City:</label>
+                    <br>
+                    <input type="text" name="City" >
+                    <br>
+                    <label>State:</label>
+                    <br>
+                    <input type="text" name="State" >
+                    <br>
+                    <label>ZIP Code:</label>
+                    <br>
+                    <input type="text" name="ZipCode" >
+                    <br>
+                    <label>Email:</label>
+                    <br>
+                    <input type="email" name="Email" >
+                    <br>
+                    <input type="submit" value="Sign Up">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
