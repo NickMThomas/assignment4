@@ -19,38 +19,52 @@ public class NewCustomerServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, 
                           HttpServletResponse response) 
                           throws ServletException, IOException {
-        String url = "/New_customer.html";
+        String url = "/New_customer.jsp";
 
         String action = request.getParameter("action");
         if (action == null){
             action = "userExists";
         }
         if (action.equals("userExists")){
-            url = "/index.html";            
+            url = "/index.html"; 
+            getServletContext().getRequestDispatcher(url)
+                    .forward(request, response);
         }
-        else if (action.equals("join")){
+        else if (action.equals("New_customer")){
             String firstName = request.getParameter("FirstName");
-            String lastName = request.getParameter("FirstName");
+            String lastName = request.getParameter("LastName");
             String phone = request.getParameter("Phone");
             String address = request.getParameter("Address");
             String city = request.getParameter("City");
             String state = request.getParameter("State");
-            String zip = request.getParameter("ZIPCode");
+            String zip = request.getParameter("ZipCode");
             String email = request.getParameter("Email");
             
-            String message;
-            if (firstName == null || lastName == null || phone == null || 
-                    address == null || city == null || state == null || 
-                    zip == null || email == null){
+            String message = "";
+            if (firstName == "" || lastName == "" || phone == "" || 
+                    address == "" || city == "" || state == "" || 
+                    zip == "" || email == ""){
                 message = "Please complete all form feilds.";
-                url = "/New_customer";
+                url = "/New_customer.jsp";
+                
             }
             else{
-                url = "/Success.html";
+                url = "/Success.jsp";
+                
             }
+            request.setAttribute("message", message);
+            request.setAttribute("firstName", firstName);
+            request.setAttribute("lastName", lastName);
+            request.setAttribute("phone", phone);
+            request.setAttribute("address", address);
+            request.setAttribute("city", city);
+            request.setAttribute("state", state);
+            request.setAttribute("zipCode", zip);
+            request.setAttribute("email", email);
+            
             
         }         
         getServletContext().getRequestDispatcher(url)
-                    .forward(request, response);
+                    .forward(request, response); 
     }    
 }

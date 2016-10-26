@@ -1,10 +1,13 @@
+<%-- 
+    Document   : New_customer
+    Created on : Oct 26, 2016, 7:01:57 AM
+    Author     : Nick
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
+    <html>
     <head>
         <title>Titan Online Banking - New Customer</title>
         <meta charset="UTF-8">
@@ -25,8 +28,8 @@ and open the template in the editor.
             </div>
             <div>                
                 <h3><i>${message}</i></h3>
-                <form method="post">
-                    <input type="hidden" name="action" value="join">
+                <form action="New_customer" method="post">
+                    <input type="hidden" name="action" value="New_customer">
                     <br>
                     <label>First Name:</label>
                     <br>
@@ -66,3 +69,5 @@ and open the template in the editor.
         </div>
     </body>
 </html>
+
+

@@ -1,9 +1,11 @@
+<%-- 
+    Document   : Success
+    Created on : Oct 26, 2016, 7:39:19 PM
+    Author     : Nick
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>Titan Online Banking - Success</title>
@@ -24,7 +26,24 @@ and open the template in the editor.
                 </ul>
             </div>
         <h1>Congratulations!</h1>
-        <p>Your account has been successfully created.</p>
+        <h2>Your account has been successfully created.</h2>
+        <label> First Name:</label>
+        <p>${firstName}</p>
+        <label> Last Name:</label>
+        <p>${lastName}</p>
+        <label> Phone:</label>
+        <p>${phone}</p>
+        <label> Street Address:</label>
+        <p>${address}</p>
+        <label> City:</label>
+        <p>${city}</p>
+        <label> State:</label>
+        <p>${state}</p>
+        <label> ZIP Code:</label>
+        <p>${zipCode}</p>
+        <label> Email Address:</label>
+        <p>${email}</p>
         
     </body>
 </html>
+
