@@ -31,12 +31,12 @@ public class LoginServlet extends HttpServlet {
     
     
     if(userName.equals("jsmith@toba.com") && password.equals("letmein")){  
-        String url = "/Account_activity.html";
+        String url = "/Account_activity.jsp";
         getServletContext().getRequestDispatcher(url)
             .forward(request,response);
     }  
     else{          
-        String url = "/Login_failure.html";
+        String url = "/Login_failure.jsp";
         getServletContext().getRequestDispatcher(url)
             .forward(request,response);
     }    
