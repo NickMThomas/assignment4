@@ -1,29 +1,16 @@
-<%-- 
-    Document   : New_customer
-    Created on : Oct 26, 2016, 7:01:57 AM
-    Author     : Nick
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <html>
-    <head>
-        <title>Titan Online Banking - New Customer</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-    </head>
+<%@page contentType="text/html" pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:import url="/includes/header.html" />
     <body>
         <div id="wrapper">
             <div id="mainHeader">
             </div>
             <div class="center">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Login.html">Login</a></li>
-                    <li><a href="Account_activity.html">Account Activity</a></li>
-                    <li><a href="Transaction.html">Transactions</a></li>
+                    <li><a href="index.jsp">Home</a></li>
+                    <li><a href="Login.jsp">Login</a></li>
+                    <li><a href="Account_activity.jsp">Account Activity</a></li>
+                    <li><a href="Transaction.jsp">Transactions</a></li>
                 </ul>
             </div>
             <div>                
@@ -33,41 +20,40 @@
                     <br>
                     <label>First Name:</label>
                     <br>
-                    <input type="text" name="FirstName" >
+                    <input type="text" name="FirstName" value="${user.firstName}">
                     <br>
                     <label>Last Name:</label>
                     <br>
-                    <input type="text" name="LastName" >
+                    <input type="text" name="LastName" value="${user.lastName}">
                     <br>
                     <label>Phone:</label>
                     <br>
-                    <input type="text" name="Phone" >
+                    <input type="text" name="Phone" value="${user.phone}">
                     <br>
                     <label>Street Address:</label>
                     <br>
-                    <input type="text" name="Address" >
+                    <input type="text" name="Address" value="${user.address}">
                     <br>
                     <label>City:</label>
                     <br>
-                    <input type="text" name="City" >
+                    <input type="text" name="City" value="${user.city}">
                     <br>
                     <label>State:</label>
                     <br>
-                    <input type="text" name="State" >
+                    <input type="text" name="State" value="${user.state}">
                     <br>
                     <label>ZIP Code:</label>
                     <br>
-                    <input type="text" name="ZipCode" >
+                    <input type="text" name="ZipCode" value="${user.zip}">
                     <br>
                     <label>Email:</label>
                     <br>
-                    <input type="email" name="Email" >
+                    <input type="email" name="Email" value="${user.email}">
                     <br>
                     <input type="submit" value="Sign Up">
                 </form>
             </div>
         </div>
-    </body>
-</html>
+<c:import url="/includes/footer.jsp" />
 
 
