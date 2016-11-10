@@ -1,0 +1,200 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 24, 2016, 4:59:51 PM
+    Author     : Nick
+*/
+
+ol, ul {
+    list-style: none outside none;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 1.025em;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+label {
+    min-width: 25%;
+    color: white;
+    text-align: left;
+    padding-right: 5%;
+}
+h1 {
+    color: white;
+}
+h2 {
+    color: white;
+}
+h3 {
+    color: white;
+}
+p {
+    color: white;
+}
+body {
+    color: #000000;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 1.05em;
+    background-color: black;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: darkslategrey;
+}
+a {
+    color: lightskyblue;
+}
+a:hover {
+    color: lightgray;
+}
+a:visited {
+    color: blue;
+}
+h1 {
+    font-size:32px;
+    text-align:center;
+}
+h2 {
+    font-size:24px;
+    text-align:center;    
+    margin-top:5%
+}
+p {
+    padding: .25%;
+    font-size:14px;
+    padding: 1% 2% 1% 2%;
+}
+table{
+    border-spacing:10px;
+    align-self:stretch;
+}
+th{
+    font-size:24px;
+    width:33%;
+}
+td {
+    font-size: 14px;
+    white-space:nowrap;
+    text-align:center;
+    width:33%;    
+}
+.center {
+    margin: 0 auto;
+    width: 50%;
+   
+}
+#mainHeader {
+    padding: 1%;
+    width: 98%;
+    height: 100%;
+    min-height: 200px;
+    max-width: 1600px;
+    background-image: url(images/TOBA.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+.header1 {
+    min-height:150px;
+    padding: 1%;
+    margin-left: 1%;
+    float: left;
+    width: 24%; 
+}
+.header2 {
+    min-height:150px;
+    padding: 1%;
+    margin: 0 1% 0 1%;
+    display: inline-block;
+    width: 42%;
+    
+    
+}
+.header3 {
+    min-height:150px;
+    padding: 1%;
+    margin-right: 1%;
+    float: right;
+    width: 24%; 
+}
+
+#wrapper {
+    width: 80%;
+    min-width: 960px;
+    max-width: 1600px;
+    height: 100%;
+    min-height: 640px;
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 5%;
+    border-radius: 25px;   
+}
+.columnLeft{
+    width:33%;
+    float:left;
+}
+
+.columnRight{
+    width:33%;
+    float:right;
+}
+
+.columnCenter{
+    width:33%;
+    display:inline-block;
+}
+.footerColumnLeft{ 
+    float: left; 
+    width: 33%;     
+    min-height:120px;
+}
+
+.footerColumnRight{ 
+    float: right; 
+    width: 33%;  
+    min-height:120px;  
+    
+}
+
+.footerColumnCenter{ 
+    display: inline-block; 
+    width: 33%; 
+    text-align:center;
+    min-height:120px;
+}
+
+footer {
+    clear:both;
+    font-size: .75em;
+    width:auto;
+    text-align: center;
+    padding: 1%;    
+    margin: 5%;
+}
+

@@ -12,6 +12,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import toba.business.User;
 
 /**
  *
@@ -29,12 +32,22 @@ public class LoginServlet extends HttpServlet {
     String userName = request.getParameter("userName");  
     String password = request.getParameter("password");  
     
+    HttpSession session = request.getSession();
+    User user = (User) session.getAttribute("user");
     
-    if(userName.equals("jsmith@toba.com") && password.equals("letmein")){  
+    String var1 = user.getPassword();
+    String var2 = user.getUserName();
+    
+    if(userName.equals(var2) && password.equals(var1)){  
         String url = "/Account_activity.jsp";
         getServletContext().getRequestDispatcher(url)
             .forward(request,response);
     }  
+    else if (userName.equals("") && password.equals("")){          
+        String url = "/New_customers.jsp";
+        getServletContext().getRequestDispatcher(url)
+            .forward(request,response);
+    }    
     else{          
         String url = "/Login_failure.jsp";
         getServletContext().getRequestDispatcher(url)
